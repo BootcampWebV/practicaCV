@@ -1,0 +1,369 @@
+/* Variables */
+:root {
+    --color-texto: rgb(131, 131, 131);
+    --color-fondo: rgb(10, 9, 7);
+    --color-boton: darkcyan;
+    --color-fondo-box-content: rgb(44,44,44);
+    --color-border-box-content: rgb(60,60,60);
+    --color-shadow-box-title: rgba(10, 9, 7, 0.5);
+    --color-fondo-box-title-whoIam: rgb(110,163,206);
+    --color-fondo-box-title-workExperience: rgb(125,161,67);
+    --color-fondo-box-title-aboutMe:  rgb(220,44,12);
+    --color-fondo-box-title-contact: rgb(238,187,57); 
+    --color-letra-headers: rgb(251,251,251);
+    --color-text-highlighted: rgb(89,127,155);
+}
+
+body {
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+body>header {
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: 20%;
+    width: 50%;
+}
+
+h1, h2, h3, h4 {
+    color: var(--color-letra-headers);
+}
+
+section.home header {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-image: url(../assets/lineasCodigo1.jpeg);
+    text-align: center;
+}
+
+section.home header h1, h1 + h3 {
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-letra-headers);
+}    
+                
+section.home header h3 {     
+    color: var(--color-fondo-box-title-workExperience);
+}
+
+.myFoto {
+    display: inline-block;  
+}
+
+figure.myFoto img {
+    border-radius: 5px;
+}
+
+.name-category {
+    display: inline-block;
+    margin: 0vh 0vh 5vh 0vh;
+}
+
+.text-highlighted {
+    color: var(--color-text-highlighted);
+    font-size: 0.9rem;
+}
+
+.personal-data {
+    display: inline-block;
+    margin-bottom: 2vh;
+}
+
+.skills {    
+    width: 0vh;    
+    border-radius: 20px;
+    transition: width 1.5s ease-in-out;            
+    padding: 1vh 1vh 1vh 3vh;
+    font-weight: bold;
+    margin-top: 1vh; 
+    margin-bottom: 1vh;         
+}
+
+.skill-java { 
+    background-color: transparent;
+    color: transparent; 
+}
+
+.skill-java:hover {
+    width: 40vh;
+    background-color: var(--color-text-highlighted);     
+    color: var(--color-letra-headers);
+}
+
+.skill-sql {  
+    background-color: transparent;
+    color: transparent;    
+}
+
+.skill-sql:hover {   
+    width: 40vh;
+    background-color: var(--color-fondo-box-title-whoIam);
+    color: var(--color-letra-headers);
+}
+
+.skill-html {        
+    background-color: transparent;
+    color: transparent;    
+}
+
+.skill-html:hover {   
+    width: 30vh;
+    background-color: var(--color-fondo-box-title-workExperience);
+    color: var(--color-letra-headers);
+}
+ 
+.skill-css {    
+    background-color: transparent;
+    color: transparent;    
+}
+
+.skill-css:hover {   
+    width: 20vh;
+    background-color: var(--color-fondo-box-title-aboutMe);
+    color: var(--color-letra-headers);
+}
+
+.skill-js {    
+    background-color: transparent;
+    color: transparent;
+}
+
+.skill-js:hover {   
+    width: 20vh;
+    background-color: var(--color-fondo-box-title-contact);
+    color: var(--color-letra-headers);
+}     
+
+section:first-child header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+}
+
+.align-center {
+    position: relative;
+    z-index: 1;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+figure iframe {
+    margin-top: 5vh;  
+    height: 100%;
+} 
+
+video {
+    margin-top: 5vh;
+    width: 55vh;  
+    height: 27.3vh;
+} 
+
+/*********************************************** GRID LAYOUT SECTIONS ****************************************************/
+
+.wrapper-layout {
+    display: grid;
+    grid-template-columns: auto 20fr;
+    grid-template-rows: 40px auto;
+    margin: 5% 5% 5% 5%;    
+}
+  
+.wrapper-box-content {
+    border-radius: 2px;
+    grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: var(--color-fondo-box-content);
+    border: 1px solid var(--color-border-box-content);
+    padding-bottom: 3vh;
+}
+
+.box-title {
+    border-radius: 2px;
+    grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 1;
+	grid-row-end: 1;
+    box-shadow: 0px 0px 5px 0px rgba(10, 9, 7, 0.5);
+    z-index: 100;
+    text-align: center;
+    line-height: 40px;   
+}
+
+.title-whoIam {
+    padding: 0vh 3vh 0 3vh;
+    background-color: var(--color-fondo-box-title-whoIam);
+}
+
+.title-workexperience {
+    padding: 0vh 3vh 0 3vh;
+    background-color: var(--color-fondo-box-title-workExperience);
+}
+
+.title-aboutme {
+    padding: 0vh 3vh 0 3vh;
+    background-color: var(--color-fondo-box-title-aboutMe);
+}
+
+.title-contact {
+    padding: 0vh 3vh 0 3vh;
+    background-color: var(--color-fondo-box-title-contact);
+}
+
+/*********************************************** GRID LAYOUT ****************************************************/
+
+/*********************************************** WORK EXPERIENCE ARTICLES ****************************************************/
+
+.workexperiencie-technologies {
+    padding: 2vh 2vh 2vh 2vh;
+    background-color: var(--color-fondo-box-title-whoIam);
+    color: var(--color-letra-headers);   
+    margin: 5vh 5vh;
+}
+
+div.wrapper-box-content article {
+    padding: 10vh 2vh 0vh 2vh
+}
+
+p.workexperiencie-technologies + p {
+    color: var(--color-text-highlighted);
+    font-weight: bold;
+}
+
+/*********************************************** WORK EXPERIENCE ARTICLES ****************************************************/
+
+.article-aboutme {
+    position: relative;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}   
+
+/*********************************************** FORM ****************************************************/
+
+input[type=text], input[type=email], input[type=tel], select, textarea {
+    display: block;    
+    color: var(--color-texto);
+    background-color: transparent;
+    border: none;
+    margin-bottom: 5vh;
+    border-bottom: 0.7vh solid var(--color-texto);
+    transition: border-color .2s ease-out;   
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, select:focus {
+    outline: none; 
+    border-color: var(--color-text-highlighted);    
+}
+
+textarea:focus {
+    outline: none;
+    border: 0.7vh solid var(--color-text-highlighted);    ;    
+}
+
+article.article-form p {
+    margin: 0vh 0 5vh 0;      
+}
+
+.boton {
+    background: transparent; 
+    text-decoration: none;
+    border: 2px solid var(--color-text-highlighted);
+    border-radius: 5px;
+    color: var(--color-letra-headers);
+    padding: 1vh 2vh 1vh 2vh;
+    font-weight: bold;    
+    transition: border-color .2s ease-out background-color .3s ease-out;
+}
+
+.boton:hover {
+    background-color: var(--color-text-highlighted);     
+    border-color: var(--color-texto);
+    cursor: pointer;
+}
+
+/*********************************************** FORM ****************************************************/
+
+footer {
+    margin: 10vh 10vh 10vh 10vh;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer li {
+    display: inline-block;
+    padding-right: 2vh;
+}
+
+.fa-circle:before {
+    content: "";
+}
+
+i.fa-linkedin, i.fa-github {
+    transition: width
+}
+
+i.fa-linkedin:hover {
+    background-color: var(--color-text-highlighted);
+    border-radius: 30px;    
+}
+
+i.fa-github:hover {
+    background-color: var(--color-fondo-box-title-workExperience);
+    border-radius: 30px;
+}
+
+@media screen and (min-width: 600px){
+    div.wrapper-box-content article.article-form{
+        padding-top: 15vh;
+        padding-left: 25vh;
+    }
+        
+}
+
+@media screen and (min-width: 950px){
+
+    .article-aboutme-wrapper {        
+        display: inline-block;
+        padding-right: 4vh;
+    } 
+
+    .article-whoiam-wrapper {
+        display: inline-block;
+        margin-right: 15vh;
+        text-align: left;
+    }
+
+    .name-category {
+        position: relative;
+        top: -19vh;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    video {
+        margin-top: 5vh;
+        width: 60vh;  
+        height: 27.3vh;
+    } 
+}    
