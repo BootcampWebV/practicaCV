@@ -7,7 +7,7 @@
     <meta name="author" content="Francisco Fernandez">
     <meta name="description" content="CV de Francisco Jose Fernandez Pacheco">
     <title>Francisco José Fernández Pacheco CV</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -16,44 +16,21 @@
 </head>
 
 <body>
-    <!--<header>       
-        <nav id="top-menu">
-            <ul>
-                <li>
-                    <a id="menu-btn-hamburguer" class="fas fa-bars" href="#bottom-menu"></a>
-                </li>                
-                <li>
-                    <a id="menu-btn-home" href="./index.html#home">Home</a>
-                </li>
-                <li>
-                    <a id="menu-btn-whoiam" href="./index.html#whoIam">Quien soy</a>
-                </li>
-                <li>
-                    <a id="menu-btn-workExperience" href="./index.html#workExperience">Experiencia laboral</a>
-                </li>
-                <li>
-                    <a id="menu-btn-aboutMe" href="./index.html#aboutMe">Sobre mi</a>
-                </li>
-                <li>
-                    <a id="menu-btn-contact" href="./index.html#contact">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>-->
-    <div class="top-wrapper">      
+   
+    <div class="menu-wrapper">      
         <nav class="menu-icon">
-            <a id="menu-btn-1" class="fas fa-bars" href="#menu-bottom"></a>
-            <a id="menu-btn-2" class="fas fa-times hide" href="#menu-bottom"></a>
+            <a id="menu-btn-open" class="fas fa-bars" href="#"></a>
+            <a id="menu-btn-close" class="fas fa-times hide" href="#"></a>
         </nav>
 
-        <nav id="menu-top" class="menu-top hide">
+        <nav id="menu" class="menu hide">
             <ul>                              
                 <li>
-                    <a id="menu-btn-home" href="./index.html#home">Home</a>
+                    <a id="menu-btn-home" href="./index.html#home" class="active">Home</a>
                 </li>
                 <li>
                     <a id="menu-btn-whoiam" href="./index.html#whoiam">Quien soy</a>
-                </li>
+                </li>                
                 <li>
                     <a id="menu-btn-workexperience" href="./index.html#workexperience">Experiencia laboral</a>
                 </li>
@@ -78,47 +55,49 @@
     </section>
 
     <section id="whoiam" class="wrapper-layout ">
-        <header class="box-title title-whoIam">
+        <header class="box-title title-whoiam">
             <h2>Quien soy</h2>                
         </header>
         <div class="wrapper-box-content">
             <article class="align-center"> 
-                <div class="article-whoiam-wrapper">                 
-                    <figure id="myFoto" class="myFoto">
-                        <img src="assets/myFoto.jpg" alt="Francisco Fernández">
-                    </figure>
-                </div>
-                <div  class="article-whoiam-wrapper">
-                    <div class="name-category">
-                        <h4>Francisco José Fernández Pacheco</h4>
-                        <p class="text-highlighted">Analista programador</p>
-                    </div>    
-                </div>
-                <div  class="article-whoiam-wrapper">
-                    <div class="personal-data">
-                        <h4>Nombre y apellidos</h4><p>Francisco José Fernández Pacheco</p>
-                        <h4>Fecha de nacimiento</h4><p>5 de Mayo de 1980</p>
-                        <h4>Lugar de nacimiento</h4><p>España</p>
-                        <h4>D.N.I</h4><p>02278996-S</p>                            
+                <div class="wrapper-whoiam-flex">   
+                    <div class="article-whoiam-wrapper">                 
+                        <figure id="myFoto" class="myFoto">
+                            <img src="assets/myFoto.jpg" alt="Francisco Fernández">
+                        </figure>
+                    </div>
+                    <div class="article-whoiam-wrapper">
+                        <div class="name-category">
+                            <h4>Francisco José Fernández Pacheco</h4>
+                            <p class="text-highlighted">Analista programador</p>
+                        </div>    
+                    </div>
+                    <div class="article-whoiam-wrapper">
+                        <div class="personal-data">
+                            <h4>Nombre y apellidos</h4><p>Francisco José Fernández Pacheco</p>
+                            <h4>Fecha de nacimiento</h4><p>5 de Mayo de 1980</p>
+                            <h4>Lugar de nacimiento</h4><p>España</p>
+                            <h4>D.N.I</h4><p>02278996-S</p>                            
+                        </div>
+                    </div>  
+                    <div class="article-whoiam-wrapper">
+                        <p>
+                            Soy técnico superior en desarrollo de aplicaciones informáticas, con gran experiecia en el desarrollo de sistemas backend Java, apis REST, Spring... 
+                        </p>    
+                        <p>
+                            Actualmente estoy cursando el Bootcamp Web en KeepCoding.
+                        </p>
                     </div>
                 </div>
-                <div class="article-whoiam-description-wrapper">
-                    <p>
-                        Soy técnico superior en desarrollo de aplicaciones informáticas, con gran experiecia en el desarrollo de sistemas backend Java, apis REST, Spring... 
-                    </p>    
-                    <p>
-                        Actualmente estoy cursando el Bootcamp Web en KeepCoding.
-                    </p>
-                </div>               
-            </article>
-             <div class="article-skills">
+                <div class="article-skills">
                     <div id="skills-java" class="skills">Java</div>
                     <div id="skills-sql" class="skills">Sql</div>
                     <div id="skills-html" class="skills">Html</div>
                     <div id="skills-css" class="skills">Css</div>
                     <div id="skills-js" class="skills">Js</div>
-                </div>
-          
+                </div>     
+                                  
+            </article>
         </div>
     </section>
 
@@ -200,20 +179,21 @@
             <article class="article-form">
                 <div>
                     <p>Formulario de contacto: </p>
-                    <form action="" id="contact">
+                    <form action="./index.html#contact" id="contact">
                         <ul>
                             <li>                                
-                                <input type="text" name="name" id="name" placeholder="Nombre" required>
+                                <input type="text" name="name" id="name" placeholder="Nombre">
                             </li>
                             <li>                                
                                 <input type="email" name="email" id="email" placeholder="you@example.com">
                             </li>
                             <li>                                
-                                <select name="selection" id="selection" placeholder="hola hola">
-                                    <option value="option1">A traves de esta pagina web</option>
-                                    <option value="option2">A traves de un amigo</option>
-                                    <option value="option3">Otros</option>
+                                <select name="selection" id="selection">
+                                    <option value="A traves de esta pagina web">A traves de esta pagina web</option>
+                                    <option value="A traves de un amigo">A traves de un amigo</option>
+                                    <option value="Otros">Otros</option>
                                 </select>
+                                <input class="input-other-hide" type="text" name="other" id="other">
                             </li>
                             <li>                                
                                 <input type="tel" name="phone" id="phone" placeholder="Telefono">
@@ -226,9 +206,12 @@
                     </form>
                 </div>          
             </article>
+            <div class="wrapper-box-content listContacts" id="listContacts">                
+                <!-- Aqui va el codigo cargado de json-server asincronamente-->                
+            </div>    
         </div>  
     </section> 
-           
+
     <footer>
         <nav>
             <ul>             
@@ -252,5 +235,4 @@
         </nav>
     </footer>
 </body>
-
 </html>

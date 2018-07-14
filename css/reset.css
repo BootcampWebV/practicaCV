@@ -12,7 +12,7 @@ nav ul, nav li, form ul, form li, figure {
     padding: 0; 
 }
 
-nav ul, form ul {
+nav ul, form ul, section ul {
     list-style: none;
 }
 
